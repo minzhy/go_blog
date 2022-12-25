@@ -24,4 +24,5 @@ func InitRouter() {
 
 	r.Run(utils.HttpPort)
 	// 或者返回r.Engine
+	// 在这里Run的时候，其实是有时间限制的，超过一定时间就会连接失败。
 }
